@@ -1,6 +1,7 @@
 import json
 import os
 from datetime import datetime
+from markdown import markdown
 
 import streamlit as st
 import yfinance as yf
@@ -171,4 +172,4 @@ if submit_button:
     else:
         results = crew.kickoff(inputs={"ticket": topic})
         st.subheader("Results from your research:")
-        st.write(results)
+        st.write(markdown(results))
