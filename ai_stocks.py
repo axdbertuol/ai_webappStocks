@@ -172,4 +172,4 @@ if submit_button:
     else:
         results = crew.kickoff(inputs={"ticket": topic})
         st.subheader("Results from your research:")
-        st.write(markdown(results))
+        st.write(results.raw, unsafe_allow_html=True)
