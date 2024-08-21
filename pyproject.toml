@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "stock-ai"
+version = "0.1.0"
+description = ""
+authors = ["Alexandre Bertuol <axdbertuol@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<=3.13"
+ipykernel = "^6.29.5"
+yfinance = "^0.2.41"
+crewai = {extras = ["tools"], version = "^0.51.1"}
+langchain = "^0.2.14"
+langchain-openai = "^0.1.22"
+langchain-community = "^0.2.12"
+duckduckgo-search = "^6.2.10"
+streamlit = "^1.37.1"
+pysqlite3-binary = "^0.5.3.post1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
